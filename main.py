@@ -1,6 +1,6 @@
 import yaml
 import os
-userdataDir = r'userdata/survival/'
+userdataDir = r'userdata/'
 
 for filename in os.listdir(userdataDir):
     with open(userdataDir + filename) as file:
@@ -11,7 +11,7 @@ for filename in os.listdir(userdataDir):
             print(repr(e))
 
         print(output)
-        outputFile = open(r'output/survival.txt', 'a')
+        outputFile = open(r'output/', 'a')
         outputFile.write(output + "\n")
         outputFile.close()
 print("Done :)")
