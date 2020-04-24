@@ -11,7 +11,7 @@ for filename in os.listdir(userdataDir):
             print(repr(e))
 
         print(output)
-        outputFile = open(r'output/', 'a')
+        outputFile = open(r'output.txt', 'a')
         outputFile.write(output + "\n")
         outputFile.close()
 print("Done :)")
